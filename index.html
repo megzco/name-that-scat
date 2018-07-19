@@ -1,23 +1,24 @@
 <!DOCTYPE>
 <html>
-    <head>        
+    <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="data.js"></script>
-        <script type="text/javascript" src="mainScat.js"></script>        
+        <script type="text/javascript" src="mainScat.js"></script>
         <link rel="stylesheet" type="text/css" href="scatStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     </head>
     <body>
-        <div class="container">        
+        <div class="container">
             <header>
                 <img src="scatLogo.png" title="Name That Scat Logo">
-            </header>           
+            </header>
             <div id="question">
                 <div style="margin: 1rem;">
                     <label>Whose scat is it anyway? </label>
-                    <input id="guess"></input>
-                    <button onclick="submitGuess()">Submit Guess</button>                    
+                    <input></input>
+                    <button onclick="submitGuess()">Guess</button>
                 </div>
-                <div id="image" class="image"></div>            
+                <div id="image" class="image"></div>
                 <div id="caption" class="caption"></div>
             </div>
             <div id="failure" class="scatFail hidden">
@@ -25,12 +26,13 @@
                 <div><button onclick="tryAgain()">Try Again</button></div>
             </div>
             <div id="success" class="scatPwn hidden">
-                <div class="message">That's Correct!</div>
-                <div><button onclick="getPrize()">Collect Prize!</button></div>
+                <div class="message">Correct!</div>
+                <div><button onclick="getPrize()">Collect Your Prize</button></div>
             </div>
             <div id="prize" class="scatPwn hidden" onclick="getPrize()">
-                <div class="message">Sayonara, Ryan!</div>
                 <div><img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" /></div>
+                <!--Megan did this in-line styling just for you, Hafer. All the nice looking HTML is from Caleb.-->
+                <div class="message" style="text-align:center; color: #531; padding-top:15px;">Sayonara, Ryan!</div>
             </div>
         </div>
     </body>
