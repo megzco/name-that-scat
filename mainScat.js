@@ -7,8 +7,7 @@ window.onload = function() {
 };
 
 var initImage = function() {
-    var imageIndex = Math.floor(Math.random() * _data.allTheScat.length);    
-    var image = new Image();
+    var imageIndex = Math.floor(Math.random() * _data.allTheScat.length);        
 
     document.getElementById('image').innerHTML = '<img src="' + _data.allTheScat[imageIndex].url + '"/>';
     document.getElementById('caption').innerHTML = _data.allTheScat[imageIndex].caption;
