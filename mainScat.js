@@ -13,8 +13,7 @@ var initImage = function() {
     document.getElementById('image').innerHTML = '<img src="' + _data.allTheScat[imageIndex].url + '"/>';
     document.getElementById('caption').innerHTML = _data.allTheScat[imageIndex].caption;
 
-    _data.allTheScat.splice(imageIndex, 1);
-    console.log(_data.allTheScat);
+    _data.allTheScat.splice(imageIndex, 1);    
 }
 
 var submitGuess = function() {
