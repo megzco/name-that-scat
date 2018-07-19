@@ -7,13 +7,18 @@ body {
 }
 
 header {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;    
+}
+
+img {
+    width: 800px;
 }
 
 .container {
     background-color: white;
     padding: 3rem;    
     border-radius: 1rem;    
+    max-width: 800px
 }
 
 .hidden {
@@ -36,8 +41,7 @@ input {
     padding: .75rem;    
 }
 
-.scatFail, .scatPwn {
-    border: 2px solid black;
+.scatFail, .scatPwn {    
     padding: 1rem;
 }
 
