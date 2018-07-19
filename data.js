@@ -1,10 +1,10 @@
 var data = {
     allTheScat: [{
-        "caption": "The Three Amigos",
+        "caption": "Everybody scats",
         "url": "https://dwrex.files.wordpress.com/2014/02/img_3179_s.jpg",
     }, 
     {
-        "caption": "Life finds a way",
+        "caption": "Scat finds a way",
         "url": "http://pixel.nymag.com/imgs/daily/vulture/2015/06/12/12-jurassic-park-poop.w529.h352.2x.jpg"
     },
     {
