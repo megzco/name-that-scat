@@ -1,25 +1,68 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {    
     background-color: #531;
-    font-family: "Indie Flower";
-    font-weight: bold;
+    font-family: "Verdana";
+    font-weight: normal;
     font-size: 1.5rem;
+    margin: 2rem;
+}
+
+header {
+    margin-bottom: 2rem;
 }
 
 .container {
     background-color: white;
     padding: 3rem;    
-    border-radius: 1rem;
+    border-radius: 1rem;    
 }
 
-.image {
-    width: 100%;
+.hidden {
+    display: none;
 }
 
 .caption {
     font-style: italic;
     font-weight: normal;
     font-size: 1rem;
+}
+
+button {
+    padding: .75rem;
+    border: 0;    
+    cursor: pointer;    
+}
+
+input {
+    padding: .75rem;    
+}
+
+.scatFail, .scatPwn {
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.message {
+    font-size: 4rem;    
+}
+
+.scatPwn .message {
+    color: #4CAF50;
+}
+.scatFail .message {
+    color: #ff4444;
+}
+
+#question button {
+    background-color: #531;
+    color: white;
+}
+
+.scatPwn button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.scatFail button {
+    background-color: #ff4444;
+    color: white;
 }

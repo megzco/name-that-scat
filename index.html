@@ -1,26 +1,38 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="data.js"></script>
         <script type="text/javascript" src="mainScat.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="scatStyle.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container">        
             <header>
                 <img src="scatLogo.png" title="Name That Scat Logo">
             </header>           
-            <div>
-                <form>
-                    <div><label>Whose scat is it anyway? </label></div>
+            <div id="question">
+                <div style="margin: 1rem;">                    
+                    <label>Whose scat is it anyway? </label>
                     <input></input>
-                    <button>Submit Guess</button>
-                </form>
+                    <button onclick="submitGuess()">Submit Guess</button>                    
+                </div>
+                <div id="image" class="image"></div>            
+                <div id="caption" class="caption"></div>
             </div>
-            <div id="image" class="image"></div>
-            <div id="caption" class="caption"></div>
+            <div id="failure" class="scatFail hidden">
+                <span class="message">Wrong!</span>
+                <button onclick="tryAgain()">Try Again</button>
+            </div>
+            <div id="success" class="scatPwn hidden">
+                <span class="message">That's Correct!</span>
+                <button onclick="getPrize()">Collect Prize!</button>
+            </div>
+            <div id="prize" class="scatPwn hidden" onclick="getPrize()">
+                <div class="message">Sayonara, Ryan!</div>
+                <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" />
+            </div>
         </div>
     </body>
 </html>
