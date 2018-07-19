@@ -2,8 +2,7 @@ body {
     background-color: #531;
     font-family: "Verdana";
     font-weight: normal;
-    font-size: 1.5rem;
-    margin: 2rem;
+    font-size: 1.5rem;    
 }
 
 header {
@@ -11,14 +10,15 @@ header {
 }
 
 img {
-    width: 800px;
+    width: 100%;
 }
 
 .container {
     background-color: white;
-    padding: 3rem;    
-    border-radius: 1rem;    
-    max-width: 800px
+    padding: 2rem;    
+    border-radius: 1rem;
+    max-width: 800px;
+    margin: 1rem;
 }
 
 .hidden {
@@ -46,7 +46,8 @@ input {
 }
 
 .message {
-    font-size: 4rem;    
+    font-size: 3.5rem;    
+    margin-bottom: 1rem;
 }
 
 .scatPwn .message {
