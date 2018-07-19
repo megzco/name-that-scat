@@ -28,6 +28,7 @@ var submitGuess = function() {
 var tryAgain = function() {
     document.getElementById('question').classList.remove('hidden');
     document.getElementById('failure').classList.add('hidden');
+    document.getElementById('guess').value = "";
     
     initImage();
 }
